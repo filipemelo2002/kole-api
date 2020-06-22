@@ -14,7 +14,7 @@ module.exports = {
   | Function - Receives the current origin and should return one of the above values.
   |
   */
-  origin: true,
+  origin: '*',
 
   /*
   |--------------------------------------------------------------------------
@@ -45,7 +45,7 @@ module.exports = {
   | Function - Receives the current header and should return one of the above values.
   |
   */
-  headers: true,
+  headers: '*',
 
   /*
   |--------------------------------------------------------------------------
@@ -60,7 +60,7 @@ module.exports = {
   | Array - An array of allowed headers
   |
   */
-  exposeHeaders: false,
+  exposeHeaders: ['token', 'refresh_token'],
 
   /*
   |--------------------------------------------------------------------------
