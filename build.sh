@@ -1,4 +1,6 @@
+echo 'INSTALLING ADONIS'
+npm i -g @adonisjs/cli
 echo 'RUNNING MIGRATIONS'
-npx adonis migration:run
+adonis migration:run
 echo 'SERVING APPLICATION'
-npx adonis serve
+adonis serve
