@@ -5,8 +5,7 @@
   "description": "Adonisjs boilerplate for API server with pre-configured JWT",
   "main": "index.js",
   "scripts": {
-    "build": "chmod +x ./build.sh",
-    "start": "./build.sh",
+    "start": "node serve.js",
     "test": "jest"
   },
   "keywords": [
