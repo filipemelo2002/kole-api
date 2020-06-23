@@ -30,18 +30,18 @@ Route.delete('/filters/:id', 'FilterController.destroy').middleware(
   'admin',
 );
 
-// Route.post('/products', 'ProductController.create').middleware([
-//   'admin',
-// ]);
-// Route.get('/products/:filter', 'ProductController.show');
-// Route.get('/products', 'ProductController.list');
-// Route.put('/products/:id', 'ProductController.update').middleware([
-//   'admin',
-// ]);
-// Route.delete(
-//   '/products/:id',
-//   'ProductController.destroy',
-// ).middleware(['admin']);
+Route.post('/products', 'ProductController.create').middleware([
+  'admin',
+]);
+Route.get('/products/:filter', 'ProductController.show');
+Route.get('/products', 'ProductController.list');
+Route.put('/products/:id', 'ProductController.update').middleware([
+  'admin',
+]);
+Route.delete(
+  '/products/:id',
+  'ProductController.destroy',
+).middleware(['admin']);
 
 Route.post('/order', 'OrderController.create').middleware('auth');
 Route.get('/order', 'OrderController.show').middleware('auth');
